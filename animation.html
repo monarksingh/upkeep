@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- login modal -->
+
+<div class="modal fade order-modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <h4 class="modal-title" id="loginModalLabel">Cleaners<span class="highlight"> Service</span> Order</h4>
+            </div>
+            <form role="form" action="/">
+                <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="modal_name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="modal_phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="modal_address" placeholder="Your Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="modal_date" placeholder="Date of Cleaning">
+                        </div>
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="theme_button"><i class="rt-icon-ok"></i> Order Now!</button>
+                    <a href="#" class="theme_button" data-dismiss="modal"><i class="rt-icon-times"></i> Cancel</a>
+                </div>            
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="box_wrapper">
+
+
+    <section id="topline" class="light_section table_section">
+         <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="./" class="navbar-brand"><img src="example/logo.png" alt=""> Clean<span>ing</span></a>
+                    
+                </div>
+                <div class="col-sm-9 text-right">
+                    <span>
+                        <i class="fa fa-envelope-o"></i> <a href="mailto:info@company.net">info@company.net</a>
+                    </span>
+                    <span>
+                        <i class="fa fa-phone"></i> +1 (900) 12345-123
+                    </span>
+                    <span>
+                        <a href="#" class="theme_button btn-sm" data-toggle="modal" data-target=".order-modal"><i class="rt-icon-pen-alt-stroke"></i> Order Now!</a>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <span id="toggle_mobile_menu"></span>
+                        <span id="toggle_search"></span>
+                        <div class="widget widget_search">
+                            <form role="search" method="get" id="searchform" class="searchform form-inline" action="/">
+                                <div class="form-group">
+                                    <label class="screen-reader-text" for="search">Search for:</label>
+                                    <input type="text" value="" name="search" id="search" class="form-control" placeholder="Search...">
+                                </div>
+                                <button type="submit" id="searchsubmit" class="theme_button">Search</button>
+                            </form>
+                        </div>
+                        <nav id="mainmenu_wrapper">
+                            <ul id="mainmenu" class="nav sf-menu">
+                                <li class="active">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#info">About</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#services">Services</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#prices">Prices</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#history">History</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">Pages</a>
+                                    <ul>
+                                        <li>
+                                            <a href="service.html">Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="icons.html">Features</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="icons.html">Icons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="animation.html">Animation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shortcodes.html">Shortcodes&amp;Widgets</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="404.html">404</a>
+                                        </li>
+                                        <li>
+                                            <a href="comingsoon.html">Soon / Construction</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                    <ul>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="blog-right.html">Blog With Right Sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-full.html">Blog Full Width</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog-single.html">Blog Post</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="blog-single-right.html">Post With Right Sidebar</a>
+                                                </li>
+                                                 <li>
+                                                    <a href="blog-single-full.html">Post Full Width</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>  
+                        </nav>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="breadcrumbs" class="light_section with_bottom_border">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="active"><h1>Animation</h1></li>
+                    </ol>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+<section id="content" class="light_section text-center">
+    <div class="container">
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section_header to_animate" data-animation="slideDown" data-delay="150">Available Animations</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="fadeInLeft" data-delay="150">
+                    <h3>.fadeInLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+                
+                <div class="col-sm-12 to_animate" data-animation="fadeInUp" data-delay="150">
+                    <h3>.fadeInUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>  
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInRight" data-delay="150">
+                    <h3>.fadeInRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="slideRight" data-delay="150">
+                    <h3>.slideRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="slideUp" data-delay="150">
+                    <h3>.slideUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="slideLeft" data-delay="150">
+                    <h3>.slideLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="expandUp" data-delay="150">
+                    <h3>.expandUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="slideExpandUp" data-delay="150">
+                    <h3>.slideExpandUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="fadeIn" data-delay="150">
+                    <h3>.fadeIn</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="expandOpen" data-delay="150">
+                    <h3>.expandOpen</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="bigEntrance" data-delay="150">
+                    <h3>.bigEntrance</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="hatch" data-delay="150">
+                    <h3>.hatch</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-sm-12 to_animate" data-animation="tossing" data-delay="150">
+                    <h3>.tossing</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>   
+                
+                <div class="col-sm-12 to_animate" data-animation="pulse" data-delay="150">
+                    <h3>.pulse</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="floating" data-delay="150">
+                    <h3>.floating</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="bounce" data-delay="150">
+                    <h3>.bounce</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="pullUp" data-delay="150">
+                    <h3>.pullUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="pullDown" data-delay="150">
+                    <h3>.pullDown</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="stretchLeft" data-delay="150">
+                    <h3>.stretchLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="stretchRight" data-delay="150">
+                    <h3>.stretchRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="pullDown" data-delay="150">
+                    <h3>.pullDown</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+            
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="fadeInUp" data-delay="150">
+                    <h3>.fadeInUp</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInDown" data-delay="150">
+                    <h3>.fadeInDown</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInLeft" data-delay="150">
+                    <h3>.fadeInLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>            
+            
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="fadeInRight" data-delay="150">
+                    <h3>.fadeInRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInUpBig" data-delay="150">
+                    <h3>.fadeInUpBig</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInDownBig" data-delay="150">
+                    <h3>.fadeInDownBig</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="fadeInLeftBig" data-delay="150">
+                    <h3>.fadeInLeftBig</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="fadeInRightBig" data-delay="150">
+                    <h3>.fadeInRightBig</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="slideInDown" data-delay="150">
+                    <h3>.slideInDown</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 to_animate" data-animation="slideInLeft" data-delay="150">
+                    <h3>.slideInLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-12 to_animate" data-animation="slideInRight" data-delay="150">
+                    <h3>.slideInRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+                <div class="col-sm-12 to_animate" data-animation="moveFromLeft" data-delay="150">
+                    <h3>.moveFromLeft</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-6 to_animate" data-animation="moveFromRight" data-delay="150">
+                    <h3>.moveFromRight</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+
+                </div>      
+   
+
+                <div class="col-sm-6 to_animate" data-animation="moveFromBottom" data-delay="150">
+                    <h3>.moveFromBottom</h3>
+                    <p>Just add class <strong>"to_animate"</strong>, attributes <strong>"data-animation"</strong> with this class, and <strong>"data-delay"</strong> with number in milliseconds to any HTML element and you're done.</p>
+                </div>      
+
+            </div>
+
+
+    </div>
+</section>
+
+
+<section class="color_section action_section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="section_header">Buy This Bootstrap Theme</h2>
+                <div><a href="#" class="theme_button">Now!</a></div>
+            </div>
+            
+        </div>
+    </div>
+</section>  
+
+
+
+
+    <footer id="footer" class="grey_section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 to_animate">
+                    <div class="widget widget_flickr">
+                        <h3 class="widget-title">Flickr Widget</h3>
+                        <ul id="flickr"></ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 to_animate">
+
+                    <div class="widget widget_twitter">
+                        <h3 class="widget-title">Twitter Widget</h3>
+                        <div class="twitter"></div>
+                    </div>
+
+                </div>
+                    
+                    
+                
+                <div class="col-md-3 col-sm-6 to_animate">
+                    <div class="widget widget_mailchimp">
+                        <h3 class="widget-title">Subscribe</h3>
+                        <p>Please, subscribe to our latest news to be updated.</p>
+                        <form id="signup" action="/" method="get" class="form-inline">
+                            <div class="form-group">
+                                <input name="email" id="mailchimp_email" type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <button type="submit" class="theme_button">Send</button>
+                            <div id="response"></div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3 col-sm-6 to_animate">
+                    <div class="widget widget_text">
+                        <h3 class="widget-title">Company Info</h3>
+                        <p>Voluptate maxime tenetur, aliquam illo nihil perferendis sapiente, accusamus.</p>
+                        <p>Adipisci numquam nesciunt cumque eos, officiis inventore quaerat.</p>
+                        <p>
+                            <a class="socialico-facebook" href="#" title="Facebook" data-toggle="tooltip">#</a>
+                            <a class="socialico-twitter" href="#" title="Twitter" data-toggle="tooltip">#</a>
+                            <a class="socialico-google" href="#" title="Google" data-toggle="tooltip">#</a>
+                        </p>
+                    </div>
+                </div>
+                    
+                    
+                
+            
+            </div>
+        </div>
+    </footer>
+
+
+    <section id="copyright" class="light_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; Copyright 2014 - <strong>Cleaners</strong> Template by <a href="http://modernbootstrapthemes.com">ModernBootstrapThemes</a></p>
+                </div>
+                               
+            </div>
+        </div>
+    </section>
+ 
+
+</div><!-- eof #box_wrapper -->
+
+<div class="preloader">
+    <div class="preloader_image"></div>
+</div>
+
+
+        <!-- libraries -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery.appear.js"></script>
+
+        <!-- superfish menu  -->
+        <script src="js/vendor/jquery.hoverIntent.js"></script>
+        <script src="js/vendor/superfish.js"></script>
+        
+        <!-- page scrolling -->
+        <script src="js/vendor/jquery.easing.1.3.js"></script>
+        <script src='js/vendor/jquery.nicescroll.min.js'></script>
+        <script src="js/vendor/jquery.ui.totop.js"></script>
+        <script src="js/vendor/jquery.localscroll-min.js"></script>
+        <script src="js/vendor/jquery.scrollTo-min.js"></script>
+        <script src='js/vendor/jquery.parallax-1.1.3.js'></script>
+
+        <!-- widgets -->
+        <script src="js/vendor/jquery.easypiechart.min.js"></script><!-- pie charts -->
+        <script src='js/vendor/jquery.countTo.js'></script><!-- digits counting -->
+        <script src="js/vendor/jquery.prettyPhoto.js"></script><!-- lightbox photos -->
+        <script src='js/vendor/jquery.plugin.min.js'></script><!-- plugin creator for comingsoon counter -->
+        <script src='js/vendor/jquery.countdown.js'></script><!-- coming soon counter -->        
+        <script src="js/vendor/jquery.elevateZoom-3.0.8.min.js"></script><!-- zoom images -->
+        <script src='js/vendor/jflickrfeed.min.js'></script><!-- flickr -->
+        <script src='twitter/jquery.tweet.min.js'></script><!-- twitter -->
+
+        <!-- sliders, filters, carousels -->
+        <script src="js/vendor/jquery.isotope.min.js"></script>
+        <script src='js/vendor/owl.carousel.min.js'></script>
+        <script src='js/vendor/jquery.fractionslider.min.js'></script>
+        <script src='js/vendor/jquery.flexslider-min.js'></script>
+        <script src='js/vendor/jquery.bxslider.min.js'></script>
+
+        <!-- custom scripts -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
