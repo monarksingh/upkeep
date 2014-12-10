@@ -524,7 +524,7 @@ jQuery(window).scroll(function() {
 /////////////////////////////////////////////
 //DELETE FOLLOWING CODE TO DISABLE SWITCHER//
 /////////////////////////////////////////////
-jQuery(window).load(function(){
+/*jQuery(window).load(function(){
 
 		var switcherHTML = '<div id="switcher">';
 		switcherHTML +=    '<span class="glyphicon glyphicon-cog"></span>';
@@ -638,4 +638,4 @@ jQuery(window).load(function(){
             }
         });
 
-});
+});*/
