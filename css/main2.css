@@ -2413,7 +2413,8 @@ animated elements
   bottom: 7px;
 }
 #topline .navbar-brand span {
-  color: #1BA573;
+  /*color: #1BA573;*/
+  color:#E77614;
 }
 #topline .navbar-brand [class*="icon"]:before {
   padding-right: 14px;
