@@ -91,7 +91,7 @@ jQuery(document).ready(function() {
 		    avatar_size: 48,
 		    loading_text: 'loading twitter feed...',
 		    join_text: 'auto',
-		    username: 'ThemeForest', 
+		    username: 'monarksingh', 
 		    template: "{avatar}<div class=\"tweet_right\">{time}{join}<span class=\"tweet_text\">{tweet_text}</span></div>"
 		});
 	}
@@ -484,7 +484,7 @@ jQuery(window).load(function(){
 			flickrbase: "http://api.flickr.com/services/feeds/",
 			limit: 6,
 			qstrings: {
-				id: "63512867@N07"
+				id: "128480862@N02"
 			},
 			itemTemplate: '<a href="{{image_b}}" data-gal="prettyPhoto[pp_gal]"><li><img alt="{{title}}" src="{{image_s}}" /></li></a>'
 		}, function(data) {
