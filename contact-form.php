@@ -4,7 +4,7 @@
 //////////////////////////
 
 //Your E-mail
-//TODO : : change the below ID once official is available
+//TODO change the below ID once official is available
 $your_email = 'monarksinghyede@gmail.com';
 
 //Default Subject if 'subject' field not specified
