@@ -37,7 +37,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                 <h4 class="modal-title" id="loginModalLabel">Cleaners<span class="highlight"> Service</span> Order</h4>
+                 <h4 class="modal-title" id="loginModalLabel">Request a Callback from <span class="highlight">UKHS</span></h4>
             </div>
             <form role="form" action="/">
                 <div class="modal-body">
@@ -56,7 +56,7 @@
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="theme_button"><i class="rt-icon-ok"></i> Get a Quote</button>
+                    <button type="button" class="theme_button"><i class="rt-icon-ok"></i> Submit</button>
                     <a href="#" class="theme_button" data-dismiss="modal"><i class="rt-icon-times"></i> Cancel</a>
                 </div>            
             </form>
@@ -83,7 +83,7 @@
                         <i class="fa fa-phone"></i> +91 9175860128
                     </span>
                     <span>
-                        <a href="#" class="theme_button btn-sm" data-toggle="modal" data-target=".order-modal"><i class="rt-icon-pen-alt-stroke"></i> Get a Quote</a>
+                        <a href="#" class="theme_button btn-sm" data-toggle="modal" data-target=".order-modal"><i class="rt-icon-pen-alt-stroke"></i> Request a Callback from UKHS</a>
                     </span>
                 </div>
                 
@@ -119,12 +119,7 @@
                                 <li>
                                     <a href="index.html#services">Services</a>
                                 </li>
-                                <li>
-                                    <a href="index.html#prices">Prices</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#history">History</a>
-                                </li>
+
                                 <li class="active">
                                     <a href="contact.html">Contact</a>
                                 </li>
@@ -199,18 +194,20 @@
 
             <div class="widget widget_contact col-sm-6 to_animate">
                 <h3>Contact Info</h3>
-                <p>Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. In ac felis quis tortor malesuada pretium. In hac habitasse platea dictumst curabitur nisi hac habitasse platea dictumst maecenas nec odio et ante tincidunt tempus morbi ac felis.
-                <br><br>
-                    <i class="rt-icon-device-phone"></i><strong>Phone:</strong> +91 9175860128
+                <!--<p>Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. In ac felis quis tortor malesuada pretium. In hac habitasse platea dictumst curabitur nisi hac habitasse platea dictumst maecenas nec odio et ante tincidunt tempus morbi ac felis.-->
+
+                    <i class="rt-icon-device-phone"></i><strong>Phone:</strong> +919822089461, +919175860128
                 </p>
                 <p>
-                    <i class="rt-icon-pencil"></i><strong>Email:</strong> <a href="mailto:contact@upkhs.in">contact@upkhs.in</a>
+                    <i class="rt-icon-pencil"></i><strong>Email:</strong> <a href="mailto:contact@upkhs.in">contact@ukhs.in</a>
                 </p>
                 <p>
-                    <i class="rt-icon-globe-outline"></i><strong>Website: </strong><a href="./">www.company.com</a>
+                    <i class="rt-icon-globe-outline"></i><strong>Website: </strong><a href="./">www.ukhs.in</a>
                 </p>
                 <p>
-                    <i class="rt-icon-location-arrow-outline"></i><strong>Address:</strong> 4321 Your Address, Country 
+                    <i class="rt-icon-location-arrow-outline"></i><strong>Address:</strong> Castleworld Society, R.No. 10, S.No. 241/1+2/1,
+                    DP Road, Aundh, Pune - 411007
+
                 </p>
 
             </div>
@@ -222,7 +219,7 @@
 
 
     <footer id="footer" class="grey_section">
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
 
                 <div class="col-md-3 col-sm-6 to_animate">
@@ -276,7 +273,7 @@
                 
             
             </div>
-        </div>
+        </div>-->
     </footer>
 
 
@@ -347,7 +344,7 @@
             var styles = [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}];
 
             //type your address after "address="
-            jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=Sancheti Hospital, Pune, Maharashtra&sensor=false', function(data) {
+            jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=Castleworld Society,10, DP Rd, Wireless Colony, Aundh, Pune&sensor=false', function(data) {
                 lat = data.results[0].geometry.location.lat;
                 lng = data.results[0].geometry.location.lng;
             }).complete(function(){
@@ -384,7 +381,7 @@
                 });
                 marker.setTitle('Map title'.toString());
             //type your map title and description here
-            attachSecretMessage(marker, '<h3>Map title</h3>Map HTML description');
+            attachSecretMessage(marker, '<h3>Upkeep Hygiene Solutions</h3>Castleworld Society, R.No. 10, S.No. 241/1+2/1,DP Road, Aundh, Pune - 411007.');
             }
         </script>
 
