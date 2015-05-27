@@ -5827,3 +5827,8 @@ isotope animations
 .serviceIntroPara {
   height: 150px;
 }
+
+.justifiedText{
+  text-align: justify;
+  text-justify: inter-word;
+}
