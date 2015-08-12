@@ -39,24 +39,31 @@
             <div class="modal-header">
                  <h4 class="modal-title" id="loginModalLabel">Request a visit from <span class="highlight">UKHS</span></h4>
             </div>
-            <form role="form" action="/">
+            <form role="form" class="requestVisitForm" method="post">
                 <div class="modal-body">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="modal_name" placeholder="Your Name">
+                            <input type="text" class="form-control" id="modal_name" name="name" placeholder="Your Name">
                         </div>
+                    <div class="form-group"><input type="text" class="form-control" id="modal_phone" name="phone"
+                                                   placeholder="Your Phone"></div>
+                    <div class="form-group"><input type="text" class="form-control" id="modal_email" name="email"
+                                                   placeholder="Your Email ID"></div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="modal_phone" placeholder="Your Phone">
+                            <input type="text" class="form-control" id="modal_address" name="address"
+                                   placeholder="Your Address">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="modal_address" placeholder="Your Address">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'><input type="text" class="form-control"
+                                                                                  id="modal_date" name="date"
+                                                                                  placeholder="Date of Cleaning"> <span
+                                class="input-group-addon">                                     <span
+                                class="glyphicon glyphicon-calendar"></span>                                 </span>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="modal_date" placeholder="Date of Cleaning">
-                        </div>
+                    </div>
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="theme_button"><i class="rt-icon-ok"></i> Submit</button>
+                    <button type="submit" class="theme_button"><i class="rt-icon-ok"></i> Submit</button>
                     <a href="#" class="theme_button" data-dismiss="modal"><i class="rt-icon-times"></i> Cancel</a>
                 </div>            
             </form>
